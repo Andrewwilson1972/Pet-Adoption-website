@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdoptMe.com – Adopt a Pet</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <h2 class="logo"><i>adoptme<span>.com</span></i></h2>
+      <button id="themeToggle" class="btn-outline">Dark mode</button>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Adopt a <span>Pet</span> Today
+          </h1>
+          <p class="hero-subtitle">
+            Give a loving home to a furry best friend. One click can change both
+            of your lives. 💕
+          </p>
+          <a href="#pets" class="btn-primary">Meet our stars</a>
+        </div>
+
+        <div class="hero-images">
+          <div class="circle-img circle-img-1">
+            <img src="cat.jpg" alt="Curious cat" />
+          </div>
+          <div class="circle-img circle-img-2">
+            <img src="dog.jpg" alt="Happy dog" />
+          </div>
+          <div class="floating-paw">🐾</div>
+        </div>
+      </section>
+
+      <!-- PET CARDS -->
+      <section id="pets" class="pets-section">
+        <h2 class="section-title">Pets waiting for you</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-img">
+              <img src="dog.jpg" alt="Jerry the dog" />
+            </div>
+            <div class="card-body">
+              <h3>Meet Jerry</h3>
+              <p>
+                Jerry is a charming and friendly dog with a heart of gold.
+                He’s a medium-sized fluff ball who loves belly rubs, zoomies,
+                and watching sunsets with his humans.
+              </p>
+              <button class="btn-primary adopt-btn" data-pet="Jerry">
+                Adopt Jerry
+              </button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img">
+              <img src="cat.jpg" alt="Tom the cat" />
+            </div>
+            <div class="card-body">
+              <h3>Meet Tom</h3>
+              <p>
+                Tom is a playful, affectionate cat who enjoys window sunbaths,
+                gentle head boops, and dramatic 3 a.m. sprints down the hallway.
+              </p>
+              <button class="btn-primary adopt-btn" data-pet="Tom">
+                Adopt Tom
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+       <p>a gift of new life ✨</p>
+  <p class="credit">Made with ❤️ by Andrew Wilson</p>
+    </footer>
+
+    <!-- Toast message -->
+    <div id="toast"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

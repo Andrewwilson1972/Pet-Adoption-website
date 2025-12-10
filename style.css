@@ -307,18 +307,18 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 780px) {
+/* ---------- RESPONSIVE STYLES ---------- */
+
+/* Tablets & small laptops */
+@media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 1.5rem;
   }
 
   .hero-text {
     order: 2;
-  }
-
-  .hero-subtitle {
-    margin-inline: auto;
   }
 
   .hero-images {
@@ -326,22 +326,72 @@ footer {
     margin-bottom: 0.5rem;
   }
 
+  .hero-subtitle {
+    margin-inline: auto;
+  }
+
   .cards {
     justify-content: center;
   }
 }
 
-@media (max-width: 480px) {
+/* Phones */
+@media (max-width: 600px) {
+  body {
+    background: var(--bg);
+  }
+
   main,
   .top-bar {
     padding-inline: 1rem;
   }
 
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+
   .circle-img {
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding-inline: 0.8rem;
   }
 }
+
+/* Very small phones */
+@media (max-width: 400px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    padding: 0.5rem 1.1rem;
+    font-size: 0.85rem;
+  }
+
+  .card-body p {
+    font-size: 0.85rem;
+  }
+}
+
 
 .credit {
   margin-top: 6px;

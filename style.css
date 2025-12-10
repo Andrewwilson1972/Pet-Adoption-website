@@ -346,6 +346,10 @@ footer {
     padding-inline: 1rem;
   }
 
+  .hero {
+    padding-top: 0.5rem;
+  }
+
   .hero-title {
     font-size: 2rem;
   }
@@ -354,9 +358,25 @@ footer {
     font-size: 0.9rem;
   }
 
+  /* Fix hero images on mobile */
+  .hero-images {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
   .circle-img {
     width: 130px;
     height: 130px;
+    position: static;        /* no absolute overlap */
+    margin-bottom: 0.75rem;
+  }
+
+  .circle-img-2 {
+    display: none;           /* show only one circle on phones */
   }
 
   .cards {
@@ -373,7 +393,12 @@ footer {
     font-size: 0.8rem;
     padding-inline: 0.8rem;
   }
+    .floating-paw {
+    display: none;
+  }
+
 }
+
 
 /* Very small phones */
 @media (max-width: 400px) {
